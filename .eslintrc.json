@@ -1,0 +1,31 @@
+{
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "space-before-function-paren" : [2, "always"],
+        "func-names"                  : 0,
+        "key-spacing"                 : 0,
+        "no-else-return"              : 0,
+        "no-multi-spaces"             : 0,
+        "one-var"                     : 0,
+        "camelcase"                   : 1,
+        "new-cap"                     : 1,
+        "consistent-return"           : 1,
+        "object-shorthand"            : 0
+    }
+}
