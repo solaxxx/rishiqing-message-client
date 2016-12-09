@@ -11,7 +11,7 @@ npm install rishqiing-message-client
 
 使用说明
 -----
-// commonJs引入
+commonJs引入
 <pre>
 // node import method
 var Client = require('rishiqing-message-client');
