@@ -8,5 +8,11 @@
  *  reconnection : function () {}
  * });
  */
+// get client
+var Client =  require('./client.js');
+// export window function
+window.RsqMessgeClient = Client;
+// export
+module.exports = Client;
 
-module.exports =  require('./client.js');
+

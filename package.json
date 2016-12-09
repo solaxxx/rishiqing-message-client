@@ -1,24 +1,24 @@
 {
   "name": "rishiqing-message-client",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "rishiqing message client",
-  "main": "./build/bundle.js",
+  "main": "./src/index.js",
   "dependencies": {
+    "socket.io-client": "1.4.5"
+  },
+  "devDependencies": {
+    "eslint": "3.0.1",
     "gulp": "^3.9.1",
     "gulp-uglify": "^2.0.0",
     "gulp-concat": "2.6.1",
     "browserify": "13.1.1",
     "pump": "1.0.1",
-    "socket.io-client": "1.4.5",
     "vinyl-source-stream": "1.1.0",
     "gulp-eslint": "3.0.1",
     "gulp-watch": "4.3.11",
     "vinyl-buffer": "1.0.0",
     "gulp-sourcemaps": "1.9.1",
     "gulp-bom": "1.0.0"
-  },
-  "devDependencies": {
-    "eslint": "3.0.1"
   },
   "scripts": {
   }
