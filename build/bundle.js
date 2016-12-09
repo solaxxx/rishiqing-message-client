@@ -7248,7 +7248,7 @@ var io        = require('socket.io-client/lib/');
 
 
 var Client =function (url) {
-  this.roomStore();
+  this.initRoomStore();
   this.setUrl(url);
   this.iosocket = io.connect(url);
   this.iosocket.zjy = true;
@@ -7263,7 +7263,7 @@ Client.prototype.setUrl = function (url) {
 };
 
 // init room store
-Client.prototype.roomStore = function () {
+Client.prototype.initRoomStore = function () {
   this.roomStore = {};
 };
 
@@ -7346,7 +7346,7 @@ Client.prototype.leaveStoreRoom =function () {
 };
 
 function windowEvent (client) {
-  // ���ڱ��ر�ʱ
+  // on window close
   window.onbeforeunload = function () {
     client.leaveStoreRoom();
     // console.log('onbeforeunload')

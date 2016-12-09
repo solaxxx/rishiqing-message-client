@@ -5,7 +5,18 @@
     <title></title>
     <script type="text/javascript" src="./build/bundle.js"></script>
     <script type="text/javascript">
-        Zjy()
+        var client = new RsqMessgeClient('http://localhost:1717')
+        client.init({
+            onConnection:function () {   // 连接成功
+                console.log('connection success');
+            },
+            onActive : function (data) { // 收到消息
+                console.log('recevice data : %o', data);
+            },
+            reconnection : function () { // 断线重连
+                console.log('reconnection success');
+            }
+        });
     </script>
 </head>
 <body>
