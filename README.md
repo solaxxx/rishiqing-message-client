@@ -25,7 +25,7 @@ import Client     from 'rishiqing-message-client';
 
 建立连接
 <pre>
-var client = new RsqMessgeClient('http://localhost:1717')
+var client = new Client('http://localhost:1717')
 client.init({
     onConnection:function () { ? // 连接成功
         console.log('connection success');
