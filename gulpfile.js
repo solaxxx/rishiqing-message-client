@@ -24,6 +24,10 @@ gulp.task('browserify', function () {
   return  browserify('./src/index.js')
     .bundle()
     .pipe(source('bundle.js'))
+    .pipe(buffer())
+   // .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(uglify({mangle: true, compress: true}))//类型：Boolean 默认：true 是否完全压缩}))
+   // .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./build/'));
 });
 
