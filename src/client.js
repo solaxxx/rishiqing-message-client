@@ -53,8 +53,8 @@ Client.prototype.init =  function (opt) {
 
 // reconnect
 Client.prototype.reconnection = function () {
-  this.iosocket.connect();
   this.opt.reconnection.call(this);
+  this.iosocket.connect();
   // rejoin all the room
   this.joinStoreRoom();
 };
