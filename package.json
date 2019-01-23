@@ -1,6 +1,6 @@
 {
   "name": "rishiqing-message-client",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "rishiqing message client",
   "main": "./src/index.js",
   "dependencies": {
